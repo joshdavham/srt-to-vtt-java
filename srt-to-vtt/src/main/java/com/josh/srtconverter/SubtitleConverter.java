@@ -15,27 +15,35 @@ public class SubtitleConverter {
             writer.write("WEBVTT\n\n");
 
             String line;
+            String previousNonNumericLine = null;
             while ((line = reader.readLine()) != null)
             {
                 
                 line = line.trim();
 
-                if (line.contains("^\\d+$")) {
+                if (line.matches("^\\d+$")) {
                     continue;
                 }
 
                 if (line.contains("-->"))
                 {
-                    line = line.replace(",", ",");
+                    line = line.replace(",", ".");
                 }
 
-                writer.write(line);
-                writer.newLine();
+                if (previousNonNumericLine != null) {
+                    writer.write(previousNonNumericLine);
+                    writer.newLine();
+                }
+
+                previousNonNumericLine = line;
 
 
             }
 
-
+        // Write the final line (no trailing newline)
+        if (previousNonNumericLine != null) {
+            writer.write(previousNonNumericLine);
+        }
 
         }
 
