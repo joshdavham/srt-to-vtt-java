@@ -1,6 +1,7 @@
-package com.josh.srtconverter;
+package io.github.joshdavham.srtconverter;
 
 import org.junit.jupiter.api.*;
+
 import java.io.*;
 import java.nio.file.*;
 

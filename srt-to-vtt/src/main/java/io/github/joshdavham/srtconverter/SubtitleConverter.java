@@ -1,4 +1,4 @@
-package com.josh.srtconverter;
+package io.github.joshdavham.srtconverter;
 
 import java.io.*;
 
