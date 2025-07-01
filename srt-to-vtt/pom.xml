@@ -16,6 +16,13 @@
     </license>
   </licenses>
 
+ <developers>
+    <developer>
+      <name>Joshua Hamilton</name>
+      <email>hamiltonjoshuadavid@gmail.com</email>
+    </developer>
+  </developers>
+
   <dependencies>
     <dependency>
       <groupId>org.junit.jupiter</groupId>
