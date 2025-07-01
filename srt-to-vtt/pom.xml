@@ -7,7 +7,7 @@
   <version>0.1.0</version>
   <name>srt-to-vtt</name>
   <description>A simple Java program to convert .srt subtitle files to .vtt subtitle files</description>
-  <url>http://maven.apache.org</url>
+  <url>https://github.com/joshdavham/srt-to-vtt-java</url>
   <dependencies>
     <dependency>
       <groupId>org.junit.jupiter</groupId>
